@@ -58,7 +58,7 @@ header {
   position: relative;
   background: var(--primary-color);
   text-align: center;
-  padding: 5rem 0;
+  padding: 4rem 0 0 0;
   color: #fff;
 }
 header::after {
@@ -71,8 +71,8 @@ header::after {
   width: 100%;
   height: 120%;
   background: var(--primary-color);
-  -webkit-transform: skewY(3deg);
-  transform: skewY(3deg);
+  -webkit-transform: skewY(2deg);
+  transform: skewY(2deg);
   -webkit-transform-origin: top right;
   transform-origin: top right;
   z-index: -9;
@@ -226,6 +226,8 @@ label {
   text-align: center;
   color: var(--secundary-color);
   font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
 }
 .decorated > span{
  position: relative;
@@ -235,7 +237,7 @@ label {
  content: '';
  position: absolute;
  top: 50%;
- border-bottom: 2px solid;
+ border-bottom: .15rem solid;
  width: 100vw;
  margin: 0 20px;
 }
@@ -273,4 +275,44 @@ label {
   font-weight: 300;
   margin: 0 0 .2rem 0;
   font-size: .8rem;
+}
+.grid-products {
+  margin: 1rem 0;
+}
+.newsletter {
+  color: var(--secundary-color);
+}
+.newsletter p {
+  color: var(--secundary-color);
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+@media (max-width: 480px) {
+  .newsletter .content-col {
+    padding: 0 !important;
+  }
+}
+footer {
+  background: var(--primary-color);
+  position: relative;
+  padding: 4rem 0;
+  margin: 5rem 0 0 0;
+  color: #fff;
+  font-weight: 600;
+}
+footer::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  background: var(--primary-color);
+  -webkit-transform: skewY(-3deg);
+  transform: skewY(-3deg);
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+  z-index: -9;
 }
