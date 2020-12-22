@@ -8,8 +8,6 @@ bGrid v1.0
 
 /*VARIABLES*/
 :root {
-  /* --content-max-size: 1040px; */
-  --content-max-size: 95%;
   --default-pr: .5rem;
   --default-pl: .5rem;
 }
