@@ -4,6 +4,7 @@
 :root {
   --content-max-size: 1040px;
   --primary-color: #707070;
+  --secundary-color: #888888;
 }
 /*ULTILIZA O NOME DA CLASSE PARA COMPOR O LAYOU. DESCONSIDERAR EM PRODUÇÃO*/
 /* .grid-container *:after {
@@ -33,7 +34,7 @@ h1, h2, h3, h4, h5 {
   font-size: 2rem;
 }
 .h3, h3 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 .h4, h4 {
   font-size: 1.5rem;
@@ -87,7 +88,7 @@ header h1 {
 label {
   display: inline-block;
   margin-bottom: .5rem;
-  color:var(--primary-color);
+  color:var(--secundary-color);
 }
 .radio-inline {
   position: relative;
@@ -134,7 +135,7 @@ label {
   cursor: pointer;
 }
 .btn-white {
-  color: var(--primary-color);
+  color: var(--secundary-color);
   background: #fff;
   width: 100%;
 }
@@ -144,10 +145,23 @@ label {
   display: block;
   width: 100%;
   margin: 2rem 0;
-  color: var(--primary-color);
+  color: var(--secundary-color);
 }
 .btn-outline:hover {
-  background: var(--primary-color);
+  background: var(--secundary-color);
+  color: #fff;
+}
+.btn-outline-pay {
+  border: 1px solid #ced4da;
+  background: #fff;
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+  color: var(--secundary-color);
+  padding: .5rem 0;
+}
+.btn-outline-pay:hover {
+  background: var(--secundary-color);
   color: #fff;
 }
 .container {
@@ -178,16 +192,16 @@ label {
 
 .section1 {
   grid-area: section1;
-  margin: 8rem 0;
+  margin: 8rem 0 0 0;
 }
 .section1 h2 {
-  color: var(--primary-color);
+  color: var(--secundary-color);
   font-weight: 300;
   font-size: 1.5rem;
   margin: 0 0 3rem 0;
 }
 .section1 p {
-  color: var(--primary-color);
+  color: var(--secundary-color);
   font-weight: 300;
   margin: 0 0 1rem 0;
 }
@@ -204,4 +218,59 @@ label {
 .content-col {
   padding: 1rem;
   border-radius: 2px;
+}
+
+/* headlines with lines */
+.decorated{
+  overflow: hidden;
+  text-align: center;
+  color: var(--secundary-color);
+  font-size: 1.2rem;
+}
+.decorated > span{
+ position: relative;
+ display: inline-block;
+}
+.decorated > span:before, .decorated > span:after{
+ content: '';
+ position: absolute;
+ top: 50%;
+ border-bottom: 2px solid;
+ width: 100vw;
+ margin: 0 20px;
+}
+.decorated > span:before{
+ right: 100%;
+}
+.decorated > span:after{
+ left: 100%;
+}
+.product-card h5 {
+  color: var(--secundary-color);
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+}
+.product-card .description {
+  color: var(--secundary-color);
+  font-weight: 300;
+  margin: 0 0 1rem 0;
+  font-size: .8rem;
+}
+.product-card .old-price {
+  color: var(--secundary-color);
+  font-weight: 300;
+  margin: 0 0 .2rem 0;
+  font-size: .8rem;
+}
+.product-card .price {
+  color: var(--secundary-color);
+  font-weight: 600;
+  margin: 0 0 .2rem 0;
+  font-size: 1rem;
+}
+.product-card .installments {
+  color: var(--secundary-color);
+  font-weight: 300;
+  margin: 0 0 .2rem 0;
+  font-size: .8rem;
 }
