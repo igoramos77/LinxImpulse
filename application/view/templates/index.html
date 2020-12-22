@@ -84,110 +84,21 @@
         <h3 class="decorated"><span>Sua coleção especial</span></h3>
         <div class="row grid-products">
 
+          {% for product in productList %}
           <div class="col col-d-25 col-t-50 col-m-100 product-card">
            <div class="content-col">
              <div class="img-produtct center">
-               <img class="img-fluid" src="https://imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6829307" alt="">
+               <img class="img-fluid" src="https://{{product.getImage()}}" alt="">
              </div>
-             <h5>Product Number 1</h5>
-             <p class="description">Product long description number 1 just to make more than one like of text.</p>
-             <p class="old-price">De: R$23,90</p>
-             <p class="price">Por: R$19,90</p>
-             <p class="installments">ou 2x de R$9,90</p>
+             <h5>{{product.getName()}}</h5>
+             <p class="description">{{product.getDescription()}}</p>
+             <p class="old-price">De: R${{product.getOldPrice()}},00</p>
+             <p class="price">Por: R${{product.getPrice()}},00</p>
+             <p class="installments">ou {{product.getInstallments()}}x de R${{product.get_installments_value()}}0</p>
              <a class="btn btn-outline-pay" href="#">Comprar</a>
            </div>
           </div>
-          <div class="col col-d-25 col-t-50 col-m-100 product-card">
-           <div class="content-col">
-             <div class="img-produtct center">
-               <img class="img-fluid" src="https://imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6829307" alt="">
-             </div>
-             <h5>Product Number 1</h5>
-             <p class="description">Product long description number 1 just to make more than one like of text.</p>
-             <p class="old-price">De: R$23,90</p>
-             <p class="price">Por: R$19,90</p>
-             <p class="installments">ou 2x de R$9,90</p>
-             <a class="btn btn-outline-pay" href="#">Comprar</a>
-           </div>
-          </div>
-          <div class="col col-d-25 col-t-50 col-m-100 product-card">
-           <div class="content-col">
-             <div class="img-produtct center">
-               <img class="img-fluid" src="https://imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6829307" alt="">
-             </div>
-             <h5>Product Number 1</h5>
-             <p class="description">Product long description number 1 just to make more than one like of text.</p>
-             <p class="old-price">De: R$23,90</p>
-             <p class="price">Por: R$19,90</p>
-             <p class="installments">ou 2x de R$9,90</p>
-             <a class="btn btn-outline-pay" href="#">Comprar</a>
-           </div>
-          </div>
-          <div class="col col-d-25 col-t-50 col-m-100 product-card">
-           <div class="content-col">
-             <div class="img-produtct center">
-               <img class="img-fluid" src="https://imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6829307" alt="">
-             </div>
-             <h5>Product Number 1</h5>
-             <p class="description">Product long description number 1 just to make more than one like of text.</p>
-             <p class="old-price">De: R$23,90</p>
-             <p class="price">Por: R$19,90</p>
-             <p class="installments">ou 2x de R$9,90</p>
-             <a class="btn btn-outline-pay" href="#">Comprar</a>
-           </div>
-          </div>
-          <div class="col col-d-25 col-t-50 col-m-100 product-card">
-           <div class="content-col">
-             <div class="img-produtct center">
-               <img class="img-fluid" src="https://imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6829307" alt="">
-             </div>
-             <h5>Product Number 1</h5>
-             <p class="description">Product long description number 1 just to make more than one like of text.</p>
-             <p class="old-price">De: R$23,90</p>
-             <p class="price">Por: R$19,90</p>
-             <p class="installments">ou 2x de R$9,90</p>
-             <a class="btn btn-outline-pay" href="#">Comprar</a>
-           </div>
-          </div>
-          <div class="col col-d-25 col-t-50 col-m-100 product-card">
-           <div class="content-col">
-             <div class="img-produtct center">
-               <img class="img-fluid" src="https://imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6829307" alt="">
-             </div>
-             <h5>Product Number 1</h5>
-             <p class="description">Product long description number 1 just to make more than one like of text.</p>
-             <p class="old-price">De: R$23,90</p>
-             <p class="price">Por: R$19,90</p>
-             <p class="installments">ou 2x de R$9,90</p>
-             <a class="btn btn-outline-pay" href="#">Comprar</a>
-           </div>
-          </div>
-          <div class="col col-d-25 col-t-50 col-m-100 product-card">
-           <div class="content-col">
-             <div class="img-produtct center">
-               <img class="img-fluid" src="https://imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6829307" alt="">
-             </div>
-             <h5>Product Number 1</h5>
-             <p class="description">Product long description number 1 just to make more than one like of text.</p>
-             <p class="old-price">De: R$23,90</p>
-             <p class="price">Por: R$19,90</p>
-             <p class="installments">ou 2x de R$9,90</p>
-             <a class="btn btn-outline-pay" href="#">Comprar</a>
-           </div>
-          </div>
-          <div class="col col-d-25 col-t-50 col-m-100 product-card">
-           <div class="content-col">
-             <div class="img-produtct center">
-               <img class="img-fluid" src="https://imagens.pontofrio.com.br/Control/ArquivoExibir.aspx?IdArquivo=6829307" alt="">
-             </div>
-             <h5>Product Number 1</h5>
-             <p class="description">Product long description number 1 just to make more than one like of text.</p>
-             <p class="old-price">De: R$23,90</p>
-             <p class="price">Por: R$19,90</p>
-             <p class="installments">ou 2x de R$9,90</p>
-             <a class="btn btn-outline-pay" href="#">Comprar</a>
-           </div>
-          </div>
+          {% endfor %}
           <div class="col col-d-100 col-t-100 col-m-100 center middle">
             <a class="btn btn-outline-pay col col-d-30 col-t-50 col-m-100" href="#">Ainda mais produtos aqui!</a>
           </div>
